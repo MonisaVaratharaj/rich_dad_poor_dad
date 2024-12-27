@@ -58,9 +58,22 @@
             font-size: 0.9em;
             color: #666;
         }
+        body {
+            -webkit-user-select: none; /* Disable text selection */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; /* Disable text selection */
+        }
+        /* Disable right-click */
+        body {
+            -webkit-touch-callout: none; /* Disable iOS callout */
+            -webkit-user-drag: none;
+        }
+
+
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <div class="container">
         <h1>Essence of the Book: Rich Dad Poor Dad</h1>
         <p><em>Rich Dad Poor Dad</em> is a starting point for anyone looking to gain control of their financial future.</p>
