@@ -41,9 +41,20 @@
             font-size: 0.9em;
             color: #666;
         }
+	     body {
+            -webkit-user-select: none; /* Disable text selection */
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; /* Disable text selection */
+        }
+        /* Disable right-click */
+        body {
+            -webkit-touch-callout: none; /* Disable iOS callout */
+            -webkit-user-drag: none;
+        }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <div class="container">
         <h1>CHAPTER 1 : THE RICH DON'T WORK FOR MONEY </h1>
       
