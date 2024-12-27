@@ -12,6 +12,19 @@
             background-color: #f4f4f4;
             color: #333;
         }
+	body {
+    -webkit-user-select: none;  /* Disable text selection for WebKit browsers (e.g., Chrome, Safari) */
+    -moz-user-select: none;     /* Disable text selection for Firefox */
+    -ms-user-select: none;      /* Disable text selection for Internet Explorer */
+    user-select: none;          /* Standard property for modern browsers */
+    
+    -webkit-touch-callout: none; /* Disable the iOS touch callout (long press menu) */
+    -webkit-user-drag: none;     /* Disable image dragging in WebKit browsers */
+    
+    /* Disable right-click */
+    oncontextmenu: "return false;";  /* JavaScript event to disable right-click */
+}
+
         h1, h2 {
             color: #0056b3;
         }
@@ -41,17 +54,7 @@
             font-size: 0.9em;
             color: #666;
         }
-	     body {
-            -webkit-user-select: none; /* Disable text selection */
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none; /* Disable text selection */
-        }
-        /* Disable right-click */
-        body {
-            -webkit-touch-callout: none; /* Disable iOS callout */
-            -webkit-user-drag: none;
-        }
+	  
     </style>
 </head>
 <body oncontextmenu="return false;">
